@@ -13,9 +13,10 @@
 
   <!-- Upon testing my game I realized a fatal flaw - one can simply "Inspect Element" and change the score to any number.
   I found some code online that claims to remove the ability for a user to access the Inspect Element feature through blocking: right-click, F12, ctrl+shift+I, and ctrl+shift+J, and ctrl+U
+  From: https://andrewstutorials.blogspot.com/2014/03/disable-ways-to-open-inspect-element-in.html
   -->
 
-  <body oncontextmenu="return false;">
+  <body oncontextmenu="return false;"> <!-- this prevents anyone from accessing the context menu > inspect elemnt -->
     <header>
       <h1>BUG SMASHER</h1>
     </header>
