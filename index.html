@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bug Smasher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="ladybug.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="bugsmasher.js" defer></script>
+  </head>
+
+  <!-- Upon testing my game I realized a fatal flaw - one can simply "Inspect Element" and change the score to any number.
+  I found some code online that claims to remove the ability for a user to access the Inspect Element feature through blocking: right-click, F12, ctrl+shift+I, and ctrl+shift+J, and ctrl+U
+  -->
+
+  <body oncontextmenu="return false;">
+    <header>
+      <h1>BUG SMASHER</h1>
+    </header>
+    <main>
+      <div class ="buttons">
+        <button id ="score" type="button">Reset Score</button>
+        <button id ="speed" type="button">Reset Speed</button>
+      </div>
+      <div class="canvas"></div>
+    </main>
+    <footer>
+      <p>Copyright &copy; Marta Polishchuk.</p>
+    </footer>
+  </body>
+</html>
